@@ -119,7 +119,7 @@ void Server::run() {
                     static_cast<size_t>(len)
                 );
                 
-                if (imsi.empty() || imsi.size() > 15) {
+                if (imsi.empty() || imsi.size() > 15 || imsi.size() < 10) {
                     spdlog::warn("Invalid IMSI received: {}", imsi);
                     sendto(sock, "rejected", 8, 0, (sockaddr*)&clientAddr, addrLen);
                     continue;

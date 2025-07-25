@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
 
     std::string imsi = argv[1];
 
-    if (imsi.empty() || (imsi.size() > 15 || imsi.size() < 15)) {
+    if (imsi.empty() || (imsi.size() > 15 || imsi.size() < 10)) {
         std::cerr << "Invalid IMSI format\n";
         return 1;
     }
