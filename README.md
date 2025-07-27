@@ -73,7 +73,7 @@
 ```json
 {
   "server_ip": "127.0.0.1",
-  "server_port": 9000,
+  "server_port": 9001,
   "log_file": "logs/client.log",
   "log_level": "INFO"
 }
